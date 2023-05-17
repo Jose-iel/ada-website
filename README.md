@@ -1,7 +1,7 @@
-# nitechdigital2.0
+# Nitechdigital2.0
 portifólio nitech
 
-# use o node 16
+# Use o node 16
 
 # Para executar o projeto use yarn ou npm como preferir
 
@@ -10,7 +10,7 @@ portifólio nitech
 " yarn "
 
 
-# Para executar basta executar(sem as aspas)
+##  Para executar basta executar(sem as aspas)
 
 "yarn dev "
 
