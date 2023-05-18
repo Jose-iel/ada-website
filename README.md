@@ -12,5 +12,5 @@ portifólio nitech
 
 ##  Para executar basta executar(sem as aspas)
 
-"yarn dev " ou "npm install"
+"yarn dev " ou "npm start"
 
