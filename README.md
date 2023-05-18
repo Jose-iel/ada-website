@@ -7,7 +7,7 @@ portifólio nitech
 
 ## Digite o comando abaixo para as dependencias (sem as aspas)
 
-" yarn install" ou "npm install"
+" yarn" ou "npm install"
 
 
 ##  Para executar basta executar(sem as aspas)
