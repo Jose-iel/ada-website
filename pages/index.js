@@ -7,7 +7,7 @@ import Testimonials from '../components/testimonials/Testimonials';
 import Services from '../components/services/Services';
 import Products from '../components/products/Products';
 // import Packages from '../components/packages/Packages';
-import Blog from '../components/blog/Blog';
+// import Blog from '../components/blog/Blog';
 import Contact from '../components/contact/Contact';
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
       <Services />
       <Products />
       <Testimonials />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
       {/* <Statistics /> */}
       {/* <Works /> */}

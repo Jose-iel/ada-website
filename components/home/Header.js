@@ -21,12 +21,12 @@ const Header = () => {
         <div className="content">
           <div className="container">
             <h1 className={`title ${loaded && "loaded"}`}>
-              <span>n</span>
-              <span>i</span>
+              <span className="text-second">n</span>
+              <span className="text-second">i</span>
               <span>t</span>
               <span>e</span>
               <span>c</span>
-              <span className="text-second">h</span>
+              <span>h</span>
             </h1>
             <p className="slogan">
               Somos especialistas em desenvolvimento de software com experiência no mercado.

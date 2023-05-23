@@ -21,9 +21,6 @@ const Blog = () => {
             excerpt="O que uma clínica de estética e seus procedimentos trazem de beneficios para a sociedade?"
           />
         </div>
-        {/* <div className="btn-wrap">
-          <button className="btn first">ver mais</button>
-        </div> */}
       </div>
       <style jsx>
         {`

@@ -4,7 +4,7 @@ const Socials = () => {
   return (
     <ul className='socials'>
       <li>
-        <a href=''>
+        <a href='https://wa.me/5511910647113'>
           <img src='static/images/whatsapp.png' alt='whatsapp' />
         </a>
       </li>
@@ -29,16 +29,6 @@ const Socials = () => {
           <img src='static/images/youtube.png' alt='youtubew' />
         </a>
       </li>
-      {/* <li>
-        <a href=''>
-          <img src='static/images/skype.png' alt='skype' />
-        </a>
-      </li>
-      <li>
-        <a href=''>
-          <img src='static/images/twitter.png' alt='twitter' />
-        </a>
-      </li> */}
       <style jsx>{`
         .socials {
           padding-top: 40px;

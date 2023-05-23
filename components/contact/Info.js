@@ -20,6 +20,7 @@ const Info = ({ icon, text }) => {
             width: 40px;
           }
           .part .text {
+            word-break: break-all;
             font-weight: 900;
             font-size: 14px;
             color: #000;

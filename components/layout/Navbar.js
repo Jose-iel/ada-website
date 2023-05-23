@@ -120,7 +120,7 @@ class Navbar extends React.Component {
                     sobre nós
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     activeClass="active"
                     to="works"
@@ -131,7 +131,7 @@ class Navbar extends React.Component {
                   >
                     nossos projetos
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     activeClass="active"
@@ -168,7 +168,7 @@ class Navbar extends React.Component {
                     packages
                   </Link>
                 </li> */}
-                <li>
+                {/* <li>
                   <Link
                     activeClass="active"
                     to="blog"
@@ -179,7 +179,7 @@ class Navbar extends React.Component {
                   >
                     blog
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     activeClass="active"

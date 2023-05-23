@@ -52,6 +52,16 @@ const Testimonials = () => {
             image="/static/images/equipe/whandell.png"
           />
           <Comment 
+            name="José Castro"
+            text="Não tenha medo do fracasso. Tenha medo de não tentar. "
+            image="/static/images/equipe/jose.jpg"
+          />
+          <Comment 
+            name="Alisson Siqueira"
+            text="O sucesso é a soma dos pequenos esforços repetidos dia após dia. "
+            image="/static/images/equipe/alisson.jpg"
+          />
+          <Comment 
             name="Aislan Galdino"
             text="Um pequeno passo a cada dia pode te levar a grandes conquistas."
             image="/static/images/equipe/aislan.jpg"
@@ -74,7 +84,7 @@ const Testimonials = () => {
            <Comment 
             name="Isis de Oliveira"
             text="A vida é como uma câmera, foque no positivo, capture momentos bons e desenvolva-os."
-            image="/static/images/equipe/isis.png"
+            image="/static/images/equipe/Isis.png"
           />
            <Comment 
             name="Rivaldo Guimarães"
@@ -84,12 +94,12 @@ const Testimonials = () => {
           <Comment 
             name="Willams Elias"
             text="Sucesso é a realização progressiva a um ideal de valor."
-            image="/static/images/equipe/williams.jpeg"
+            image="/static/images/equipe/Williams.jpeg"
           />
            <Comment 
             name="Roberta Abreu"
             text="Acredite em si mesmo e faça acontecer."
-            image="/static/images/equipe/williams.jpeg"
+            image="/static/images/equipe/roberta.png"
           />
         </Slider>
       </div>
@@ -102,6 +112,9 @@ const Testimonials = () => {
           }
           #testimonials .container {
             position: relative;
+          }
+          #testimonials .main-title {
+            color: #ccc;
           }
           #testimonials .main-slogan {
             color: #ccc;

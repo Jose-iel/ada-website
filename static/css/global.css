@@ -81,6 +81,8 @@ ul {
   top: 0;
   right: 0;
   bottom: 0;
+  background-color: #141c24;
+  opacity: 0.78; 
 }
 
 /* line 110, global.scss */
@@ -100,9 +102,9 @@ ul {
 
 /* line 125, global.scss */
 .btn.second {
-  background-color: #8704BF;
-  color: #ecb70b;
-  border: 2px solid #ecb70b;
+  background-color: #F28705;
+  border: 2px solid #F28705;
+  color: #FFFFFF;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -111,7 +113,8 @@ ul {
   /* line 131, global.scss */
   .btn.second:hover {
     background-color: transparent;
-    color: #ecb70b; }
+    color: #ecb70b; 
+  }
 
 /* line 137, global.scss */
 .btn.first {
@@ -264,9 +267,22 @@ form .input-wrap textarea:focus {
   .more-btn:hover::before {
     width: 100%; }
 
+.containerVideo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
 .iframe-video {
-   width:560px;
-   height:315px;
+  position: absolute;
+  top: 7%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 90%;
+  border: none;
 }      
 
 @media (max-width: 1045px) {
@@ -275,10 +291,6 @@ form .input-wrap textarea:focus {
     padding-left: 50px;
     padding-right: 50px; 
   } 
-.iframe-video {
-    width:  520px;
-    height: 280px;
- }      
 }
 @media (max-width: 600px) {
   /* line 296, global.scss */
@@ -290,10 +302,6 @@ form .input-wrap textarea:focus {
   .main-title {
     font-size: 32px; 
   } 
-.iframe-video {
-    width:320px;
-    height:180px;
- }  
 }
 
 .sub-title-about {

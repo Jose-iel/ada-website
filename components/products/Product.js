@@ -95,9 +95,9 @@ const Product = ({ images, title, excerpt }) => {
           </a>
         </Link>
         <p>{excerpt} ...</p>
-        <Link href="/">
+        {/* <Link href="/">
           <a className="more-btn">read more</a>
-        </Link>
+        </Link> */}
       </div>
       <style jsx>
         {`
@@ -126,7 +126,7 @@ const Product = ({ images, title, excerpt }) => {
             margin-bottom: 30px;
           }
           .product .content p {
-            margin-bottom: 30px;
+            margin-top: 15px;
           }
           .product .content .more-btn {
             display: inline-block;
