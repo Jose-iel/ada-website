@@ -29,9 +29,8 @@ const Header = () => {
               <span className="text-second">h</span>
             </h1>
             <p className="slogan">
-            Transformamos sua Ideia de App ou Site em Realidade!
-            Com nosso Time de Especialistas, conduzimos Inovação
-            para sua Empresa ter Sucesso no Mundo Digital.
+              Somos especialistas em desenvolvimento de software com experiência no mercado.
+              Criamos inovação para empresas na construção de seus serviços e produtos digitais.
             </p>
             <a href="https://wa.me/5511910647113"> <button className="btn second bold">Vamos trabalhar juntos!</button></a>
           </div>

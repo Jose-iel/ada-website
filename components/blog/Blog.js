@@ -13,12 +13,12 @@ const Blog = () => {
             title="Como se originou a Nitech"
             thumbnail="static/images/p3.png" 
             src="https://www.youtube.com/embed/fn6eMqwK0Ik" 
-            excerpt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolores nostrum accusantium"
+            excerpt="Durante a pandemia no ano de 2020, um grupo de programadores amigos identificou que o mercado tecnologico vinha crescendo"
           />
           <Post
             title="Clínicas de estética"
             thumbnail="static/images/p4.png"
-            excerpt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolores nostrum accusantium"
+            excerpt="O que uma clínica de estética e seus procedimentos trazem de beneficios para a sociedade?"
           />
         </div>
         {/* <div className="btn-wrap">

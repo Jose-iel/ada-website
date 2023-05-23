@@ -7,9 +7,9 @@ const Products = () => {
     "static/images/clinestetic3.png",
   ];
   const images2 = [
-    "static/images/p4.png",
-    "static/images/p.png",
-    "static/images/p2.png",
+    "static/images/webudget1.png",
+    "static/images/webudget2.png",
+    "static/images/webudget3.png",
   ];
   return (
     <section id="products">

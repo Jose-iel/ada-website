@@ -25,13 +25,13 @@ class About extends React.Component {
       <section id="about" ref={this.aboutSection}>
         <div className="container">
           <div className="row">
-          <div className={this.state.scrolled ? "img-o scrolled" : "img-o"}>
-            <iframe className="iframe-video"
-              src="https://www.youtube.com/embed/fn6eMqwK0Ik?controls=1"
-              frameborder="0"
-              allowfullscreen>
-            </iframe>
-          </div>
+            <div className={this.state.scrolled ? "img-o scrolled" : "img-o"}>
+              <iframe className="iframe-video"
+                src="https://www.youtube.com/embed/fn6eMqwK0Ik?controls=1"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
             <div className="text">
               <h2 className="main-title">Nós somos a NITECH</h2>
               <p>

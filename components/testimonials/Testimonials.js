@@ -43,21 +43,54 @@ const Testimonials = () => {
         <Slider {...settings}>
           <Comment 
             name="Nize Costa"
-            text="text here"
+            text="Não espere por oportunidades, crie-as você mesmo."
             image="/static/images/equipe/nize.png"
           />
           <Comment 
-            name="Whandell"
-            text="text here"
+            name="Whandell Maior"
+            text="A vida é uma jornada, aproveite a viagem. "
             image="/static/images/equipe/whandell.png"
           />
-                    <Comment 
-            name="Willams"
-            text="text here"
-            image="/static/images/equipe/willams.png"
+          <Comment 
+            name="Aislan Galdino"
+            text="Um pequeno passo a cada dia pode te levar a grandes conquistas."
+            image="/static/images/equipe/aislan.jpg"
           />
-          {/* <Comment />
-          <Comment /> */}
+            <Comment 
+            name="Alan Carvalho"
+            text="A vida é curta, faça cada dia valer a pena."
+            image="/static/images/equipe/alan.jpg"
+          />
+          <Comment 
+            name="Arlete Medeiros"
+            text="Acreditar em si mesmo é o primeiro passo para alcançar seus objetivos."
+            image="/static/images/equipe/arlete.png"
+          />
+           <Comment 
+            name="Fabiana Macedo"
+            text="Nunca é tarde demais para ser o que você poderia ter sido"
+            image="/static/images/equipe/fabi.jpg"
+          />
+           <Comment 
+            name="Isis de Oliveira"
+            text="A vida é como uma câmera, foque no positivo, capture momentos bons e desenvolva-os."
+            image="/static/images/equipe/isis.png"
+          />
+           <Comment 
+            name="Rivaldo Guimarães"
+            text="Não basta ter talento, é preciso ter persistência para alcançar o sucesso."
+            image="/static/images/equipe/rivaldo.png"
+          />
+          <Comment 
+            name="Willams Elias"
+            text="Sucesso é a realização progressiva a um ideal de valor."
+            image="/static/images/equipe/williams.jpeg"
+          />
+           <Comment 
+            name="Roberta Abreu"
+            text="Acredite em si mesmo e faça acontecer."
+            image="/static/images/equipe/williams.jpeg"
+          />
         </Slider>
       </div>
       <style jsx>
@@ -72,6 +105,7 @@ const Testimonials = () => {
           }
           #testimonials .main-slogan {
             color: #ccc;
+          }
           }
         `}
       </style>
