@@ -25,22 +25,26 @@ class About extends React.Component {
       <section id="about" ref={this.aboutSection}>
         <div className="container">
           <div className="row">
-            <div className={this.state.scrolled ? "img-o scrolled" : "img-o"}>
-              <img src="static/images/about.svg" alt="anda" />
-            </div>
+          <div className={this.state.scrolled ? "img-o scrolled" : "img-o"}>
+            <iframe className="iframe-video"
+              src="https://www.youtube.com/embed/fn6eMqwK0Ik?controls=1"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
             <div className="text">
               <h2 className="main-title">Nós somos a NITECH</h2>
               <p>
-                <strong>Sobre a Nitech</strong>
+                <strong className="sub-title-about">Sobre a Nitech</strong>
               </p>
               <p>
                 Temos As melhores práticas 
-                de programação, UX/UI Design e testes para construir o seu 
+                de programação para construir o seu 
                 produto ou serviço. Conte conosco para desenhar soluções digitais 
                 inovadoras e planejar seu sistema.
               </p>
               <p>
-                <strong>O que fazemos?</strong>
+                <strong className="sub-title-about">O que fazemos?</strong>
               </p>
               <p>
                 Desenvolvemos soluções digitais. Simplificamos a tecnologia para que 
@@ -48,14 +52,14 @@ class About extends React.Component {
                 podemos lhe ajudar.
               </p>
               <p>
-                <strong>Como fazemos?</strong>
+                <strong className="sub-title-about">Como fazemos?</strong>
               </p>
               <p>
                 Com agilidade e tecnologia para transformar a sua ideia em software. 
                 Nosso time multidisciplinar está pronto para conceber e desenvolver o 
                 seu produto ou serviço digital.
               </p>
-              <button className="btn first">Fale conosco</button>
+              <a href="https://wa.me/5511910647113"> <button className="btn first">Fale conosco</button></a>
             </div>
           </div>
         </div>
@@ -74,6 +78,7 @@ class About extends React.Component {
             }
             #about .row .text .main-title {
               text-align: left;
+              color: #7503A6;
               margin-bottom: 40px;
             }
             #about .row .text p {

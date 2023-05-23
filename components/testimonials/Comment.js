@@ -1,16 +1,16 @@
-const Comment = () => {
+const Comment = ({name, text, image}) => {
   return (
     <div className='comment-wrap'>
       <div className='comment'>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          {text}
         </p>
-        <h4>Jhon doe</h4>
+        <h4>{name}</h4>
         <div
           className='user-img'
-          style={{ backgroundImage: `url('/static/images/user.png')` }}
+          style={{ backgroundImage: `url(${image})` }}
         />
+
       </div>
       <style jsx>
         {`

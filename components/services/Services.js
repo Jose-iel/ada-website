@@ -10,23 +10,20 @@ const Services = () => {
         <div className="row">
           <Service
             icon="static/images/responsive.svg"
-            title="Responsive design"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae sit
-            ratione pariatur praesentium nulla ea voluptatibus"
+            title="Desenvolvimento de sistemas"
+            description="Desenvolvemos soluções digitais. Simplificamos a tecnologia para que você possa ter sua inovação."
           />
           <Service
             icon="static/images/creative.svg"
-            title="creative ideas"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae sit
-            ratione pariatur praesentium nulla ea voluptatibus"
+            title="Área academy"
+            description="Simulamos o ambiente coorporativo com as principais tecnologias trazendo inovações, projetos e ideias para o aprimoramento de soft e hard skills."
           />
           <Service
             icon="static/images/seo.svg"
             title="marketing"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae sit
-            ratione pariatur praesentium nulla ea voluptatibus"
+            description="Utilizamos estratégias e técnicas que têm como objetivo promover e vender produtos, serviços ou marcas."
           />
-          <Service
+          {/* <Service
             icon="static/images/style.svg"
             title="UI/UX development"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae sit
@@ -43,7 +40,7 @@ const Services = () => {
             title="clean code"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae sit
             ratione pariatur praesentium nulla ea voluptatibus"
-          />
+          /> */}
         </div>
       </div>
       <style jsx>

@@ -84,7 +84,7 @@ class Navbar extends React.Component {
                   <img 
                     src="../../static/images/logoNitech_vetor.png" 
                     alt="logo"
-                    width={100}
+                    width={150}
                   />
                 </Link>
               </div>
@@ -156,7 +156,7 @@ class Navbar extends React.Component {
                     produtos
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     activeClass="active"
                     to="packages"
@@ -167,7 +167,7 @@ class Navbar extends React.Component {
                   >
                     packages
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     activeClass="active"
@@ -225,7 +225,13 @@ class Navbar extends React.Component {
             }
             #nav .content .logo {
               cursor: pointer;
+              transition: transform 0.2s;
             }
+            
+            #nav .content .logo:hover {
+              transform: scale(1.1);
+            }
+            
             #nav .content .logo h2 {
               color: #ffe63c;
               text-transform: uppercase;

@@ -8,22 +8,28 @@ const Socials = () => {
           <img src='static/images/whatsapp.png' alt='whatsapp' />
         </a>
       </li>
+      
       <li>
-        <a href=''>
+        <a href='https://www.facebook.com/profile.php?id=100083352092137'>
           <img src='static/images/facebook.png' alt='facebook' />
         </a>
       </li>
       <li>
-        <a href=''>
+        <a href='https://www.instagram.com/nitechacademy/'>
           <img src='static/images/instagram.png' alt='instagram' />
         </a>
       </li>
       <li>
-        <a href=''>
+        <a href='https://www.linkedin.com/in/nitech-academy-20133620a/'>
           <img src='static/images/linkedin.png' alt='linkedin' />
         </a>
       </li>
       <li>
+        <a href='https://www.youtube.com/channel/UCFAPQS_gPgCFgNmHlDqGNIQ'>
+          <img src='static/images/youtube.png' alt='youtubew' />
+        </a>
+      </li>
+      {/* <li>
         <a href=''>
           <img src='static/images/skype.png' alt='skype' />
         </a>
@@ -32,7 +38,7 @@ const Socials = () => {
         <a href=''>
           <img src='static/images/twitter.png' alt='twitter' />
         </a>
-      </li>
+      </li> */}
       <style jsx>{`
         .socials {
           padding-top: 40px;

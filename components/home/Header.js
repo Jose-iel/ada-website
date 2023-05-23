@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <Parallax
       blur={3}
-      bgImage={"static/images/home-bg.webp"}
+      bgImage={"static/images/home-bg.gif"}
       bgImageAlt="the cat"
       strength={600}
     >
@@ -29,9 +29,11 @@ const Header = () => {
               <span className="text-second">h</span>
             </h1>
             <p className="slogan">
-              Nós providenciamos todas as soluções web & mobile que você precisa
+            Transformamos sua Ideia de App ou Site em Realidade!
+            Com nosso Time de Especialistas, conduzimos Inovação
+            para sua Empresa ter Sucesso no Mundo Digital.
             </p>
-            <button className="btn second bold">Nossos projetos</button>
+            <a href="https://wa.me/5511910647113"> <button className="btn second bold">Vamos trabalhar juntos!</button></a>
           </div>
         </div>
         <style jsx>{`
@@ -84,6 +86,13 @@ const Header = () => {
             letter-spacing: 3px;
             font-family: Worksans_Light;
             margin-bottom: 30px;
+            transition: transform 0.2s;
+          }
+          
+          #header .content .slogan:hover {
+            transform: scale(1.1);
+          }
+          
           }
           @media (max-width: 638px) {
             #header .content .title {

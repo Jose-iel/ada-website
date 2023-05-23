@@ -28,7 +28,7 @@ const Testimonials = () => {
     <section
       id="testimonials"
       className="overlay-bg"
-      style={{ backgroundImage: `url('static/images/home-bg.webp')` }}
+      style={{ backgroundImage: `url('static/images/home-bg1.webp')` }}
     >
       <Head>
         <link rel="stylesheet" href="/static/css/slick.min.css" />
@@ -41,10 +41,23 @@ const Testimonials = () => {
         </p>
 
         <Slider {...settings}>
-          <Comment />
-          <Comment />
-          <Comment />
-          <Comment />
+          <Comment 
+            name="Nize Costa"
+            text="text here"
+            image="/static/images/equipe/nize.png"
+          />
+          <Comment 
+            name="Whandell"
+            text="text here"
+            image="/static/images/equipe/whandell.png"
+          />
+                    <Comment 
+            name="Willams"
+            text="text here"
+            image="/static/images/equipe/willams.png"
+          />
+          {/* <Comment />
+          <Comment /> */}
         </Slider>
       </div>
       <style jsx>
@@ -56,9 +69,6 @@ const Testimonials = () => {
           }
           #testimonials .container {
             position: relative;
-          }
-          #testimonials .main-title {
-            color: #fff;
           }
           #testimonials .main-slogan {
             color: #ccc;

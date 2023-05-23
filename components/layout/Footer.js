@@ -5,7 +5,7 @@ const Footer = () => {
       <div className='container'>
         <Socials />
       </div>
-      <p className='copy'>todos os direitos reservados &copy; nitech 2023</p>
+      <p className='copy'>todos os direitos reservados &copy; CNPJ: 41.945.587/0001-99  nitech 2023 </p>
       <style jsx>
         {`
           footer .copy {

@@ -10,19 +10,20 @@ const Blog = () => {
         </p>
         <div className="posts">
           <Post
-            title="post title"
-            thumbnail="static/images/p3.png"
+            title="Como se originou a Nitech"
+            thumbnail="static/images/p3.png" 
+            src="https://www.youtube.com/embed/fn6eMqwK0Ik" 
             excerpt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolores nostrum accusantium"
           />
           <Post
-            title="post title"
+            title="Clínicas de estética"
             thumbnail="static/images/p4.png"
             excerpt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolores nostrum accusantium"
           />
         </div>
-        <div className="btn-wrap">
+        {/* <div className="btn-wrap">
           <button className="btn first">ver mais</button>
-        </div>
+        </div> */}
       </div>
       <style jsx>
         {`

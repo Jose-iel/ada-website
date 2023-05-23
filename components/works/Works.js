@@ -23,10 +23,10 @@ const Works = () => {
             <Project bg="static/images/p4.png" first={true} />
           </div>
         </div>
-
-        <div className="btn-wrap">
+/* comentado pa
+        {/* <div className="btn-wrap">
           <button className="btn first">Carregar mais</button>
-        </div>
+        </div> */}
       </div>
       <style jsx>
         {`

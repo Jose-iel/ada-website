@@ -8,12 +8,12 @@ const Contact = () => {
         <p className="main-slogan">estamos aqui para tirar todas as suas duvidas</p>
         <div className="row">
           <div className="info second-bg">
-            <Info icon="static/images/whatsapp.svg" text="+02 012 0669 3375" />
+            <Info icon="static/images/whatsapp.svg" text="+55 11 91064 7113" />
             <Info
               icon="static/images/placeholder.svg"
-              text="29 M Qodus St. Shoubra, Cairo, Egypt"
+              text="São Paulo"
             />
-            <Info icon="static/images/email.svg" text="remonfawzi0@gmail.com" />
+            <Info icon="static/images/email.svg" text="contato@nitechacademy.com.br" />
           </div>
 
           <ContactForm />
