@@ -112,6 +112,7 @@ class About extends React.Component {
                 order: 1;
                 padding-right: 0;
                 margin-bottom: 50px;
+                margin-left: 0px;
               }
               #about .row .img-o {
                 order: 2;
