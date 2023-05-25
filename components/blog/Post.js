@@ -4,16 +4,14 @@ const Post = ({ title, thumbnail, excerpt }) => {
   return (
     <div className='post'>
       <Link href='/'>
-        <a
+        <div
           className='img'
           style={{ backgroundImage: `url('${thumbnail}')` }}
-        ></a>
+        ></div>
       </Link>
       <div className='description'>
         <Link href='/'>
-          <a>
-            <h2 className='link-hov'>{title}</h2>
-          </a>
+          <h2 className='link-hov'>{title}</h2>
         </Link>
         <p>{excerpt} ...</p>
       </div>

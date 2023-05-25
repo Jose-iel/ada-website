@@ -1,16 +1,14 @@
 # Nitechdigital2.0
 portifólio nitech
 
-# Use o node 16
+### Rodando na versão mais atual do node (v18)
 
-# Para executar o projeto use yarn ou npm como preferir
+### Para executar o projeto use yarn ou npm como preferir
 
-## Digite o comando abaixo para as dependencias (sem as aspas)
+### Digite o comando abaixo para instalar as dependencias dependencias (sem as aspas)
 
-" yarn" ou "npm install"
+"yarn" ou "npm i"
 
+###  Para executar o projeto execute o comando abaico (sem as aspas)
 
-##  Para executar basta executar(sem as aspas)
-
-"yarn dev " ou "npm start"
-
+"yarn dev" ou "npm run dev"

@@ -4,7 +4,7 @@ const Project = ({ bg, first }) => {
   return (
     <div className={first ? "first project" : "project"}>
       <Link href="">
-        <a style={{ backgroundImage: `url(${bg})` }}>
+        <div style={{ backgroundImage: `url(${bg})` }}>
           <div className="more overlay-bg">
             <span className="text">more details</span>
             <img src="static/images/more-arrow.svg" alt="more" />
@@ -12,7 +12,7 @@ const Project = ({ bg, first }) => {
           <span className="hash dark-bg">
             <span className="text-second">#</span> ui/ux
           </span>
-        </a>
+        </div>
       </Link>
       <style jsx>
         {`

@@ -90,13 +90,11 @@ const Product = ({ images, title, excerpt }) => {
       </div>
       <div className="content">
         <Link href="/">
-          <a>
-            <h2>{title}</h2>
-          </a>
+          <h2>{title}</h2>
         </Link>
         <p>{excerpt} ...</p>
         {/* <Link href="/">
-          <a className="more-btn">read more</a>
+          <p className="more-btn">read more</p>
         </Link> */}
       </div>
       <style jsx>

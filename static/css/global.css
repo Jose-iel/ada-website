@@ -68,6 +68,10 @@ ul {
   margin-bottom: 0;
   padding-left: 0; }
 
+.header-bg{
+  object-fit: cover!important;
+}
+
 /* line 94, global.scss */
 .container {
   padding-left: 100px;

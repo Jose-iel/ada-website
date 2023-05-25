@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import Head from "next/head";
 import Comment from "./Comment";
-import { Parallax, Background } from "react-parallax";
 
 const Testimonials = () => {
   const settings = {

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "export": "next build && next export",
+    "start": "NODE_ENV=production node server.js",
     "heroku-postbuild": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,11 +20,11 @@
   "author": "Remon Fawzi",
   "license": "ISC",
   "dependencies": {
-    "next": "^9.0.5",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-parallax": "^2.2.0",
+    "next": "^13.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-parallax": "^3.5.1",
     "react-scroll": "^1.7.14",
-    "react-slick": "^0.25.2"
+    "react-slick": "^0.29.0"
   }
 }
