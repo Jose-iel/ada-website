@@ -1,20 +1,55 @@
+import React, { useState } from "react";
+
 const ContactForm = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSendMessage = () => {
+    if (name === "" || email === "" || message === "" ) {
+      window.alert("Os campos precisam ser preenchidos")
+      return;
+    }
+
+    let url = "https://wa.me/5511910647113?text="
+          + "*Formulário de Contato Nitech*" + "%0a"
+          + "%0a"
+          + "*Nome*: " + name + "%0a"
+          + "*E-Mail*: " + email + "%0a"
+          + "*Mensagem*: " + message;
+  
+    window.open(url, '_blank').focus();
+  }
+
   return (
     <form className="dark-bg">
       <h2>enviar mensagem</h2>
       <div className="two-inputs">
         <div className="input-wrap two-inputs">
-          <input type="text" placeholder="Nome*" className="capt" />
+          <input 
+            type="text" 
+            placeholder="Nome*" 
+            className="capt" 
+            onChange={ev => setName(ev.target.value)}
+          />
         </div>
         <div className="input-wrap">
-          <input type="text" placeholder="E-mail*" />
+          <input 
+            type="text" 
+            placeholder="E-mail*" 
+            onChange={ev => setEmail(ev.target.value)}
+          />
         </div>
       </div>
       <div className="input-wrap">
-        <textarea placeholder="Mensagem*"></textarea>
+        <textarea 
+          placeholder="Mensagem*"
+          onChange={ev => setMessage(ev.target.value)}
+        ></textarea>
       </div>
       <div className="submit-wrap">
-        <input type="submit" value="enviar" className="btn second" />
+        <input type="submit" value="enviar" className="btn second" onClick={handleSendMessage}/>
       </div>
       <style jsx>
         {`

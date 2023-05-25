@@ -47,17 +47,17 @@ const Testimonials = () => {
           />
           <Comment 
             name="Whandell Maior"
-            text="A vida é uma jornada, aproveite a viagem. "
+            text="A vida é uma jornada, aproveite a viagem."
             image="/static/images/equipe/whandell.png"
           />
           <Comment 
             name="José Castro"
-            text="Não tenha medo do fracasso. Tenha medo de não tentar. "
+            text="Não tenha medo do fracasso. Tenha medo de não tentar."
             image="/static/images/equipe/jose.jpg"
           />
           <Comment 
             name="Alisson Siqueira"
-            text="O sucesso é a soma dos pequenos esforços repetidos dia após dia. "
+            text="O sucesso é a soma dos pequenos esforços repetidos dia após dia."
             image="/static/images/equipe/alisson.jpg"
           />
           <Comment 
@@ -77,7 +77,7 @@ const Testimonials = () => {
           />
            <Comment 
             name="Fabiana Macedo"
-            text="Nunca é tarde demais para ser o que você poderia ter sido"
+            text="Nunca é tarde demais para ser o que você poderia ter sido."
             image="/static/images/equipe/fabi.jpg"
           />
            <Comment 

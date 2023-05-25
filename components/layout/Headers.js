@@ -4,10 +4,11 @@ const Headers = props => {
     <Head>
       <meta
         name='description'
-        content='NITECH uma empresa feita pensada em você.'
+        content='Seja atitude, seja impacto. Seja Nitech!'
       />
-      <title>NITECH | Digital</title>
+      <title>NITECH Digital</title>
       <link rel='stylesheet' href='/static/css/global.css' />
+      <link rel="icon" type="image/x-icon" href="../../static/images/favicon.png"></link>
     </Head>
   );
 };

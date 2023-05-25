@@ -169,6 +169,18 @@ class Navbar extends React.Component {
                     packages
                   </Link>
                 </li> */}
+                <li>
+                  <Link
+                    activeClass="active"
+                    to="testimonials"
+                    spy={true}
+                    smooth="easeInOutQuad"
+                    duration={2500}
+                    onClick={this.toggleMenu}
+                  >
+                    Nosso time
+                  </Link>
+                </li>
                 {/* <li>
                   <Link
                     activeClass="active"
