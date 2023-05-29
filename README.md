@@ -11,4 +11,4 @@ portifólio nitech
 
 ###  Para executar o projeto execute o comando abaico (sem as aspas)
 
-"yarn dev" ou "npm run dev"
+"yarn dev" ou "npm run dev" ou "npm start"
