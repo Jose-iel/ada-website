@@ -71,6 +71,11 @@ const Testimonials = () => {
             image="/static/images/equipe/alan.jpg"
           />
           <Comment 
+            name="Neto Almeida"
+            text="Insista, persista e nunca desista."
+            image="/static/images/equipe/neto.jpg"
+          />
+          <Comment 
             name="Arlete Medeiros"
             text="Acreditar em si mesmo é o primeiro passo para alcançar seus objetivos."
             image="/static/images/equipe/arlete.png"
