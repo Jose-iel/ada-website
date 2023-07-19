@@ -1,7 +1,7 @@
 {
-  "name": "nitech",
+  "name": "ada",
   "version": "1.0.0",
-  "description": "Nitech page",
+  "description": "Ada page",
   "main": "index.js",
   "scripts": {
     "dev": "next",
