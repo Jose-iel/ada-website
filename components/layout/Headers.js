@@ -1,14 +1,16 @@
 import Head from 'next/head';
-const Headers = props => {
+import { cms } from "../../cms";
+
+const Headers = () => {
   return (
     <Head>
       <meta
         name='description'
-        content='Seja atitude, seja impacto. Seja Nitech!'
+        content={cms.header.head.meta}
       />
-      <title>NITECH Digital</title>
+      <title>{cms.header.head.title}</title>
       <link rel='stylesheet' href='/static/css/global.css' />
-      <link rel="icon" type="image/x-icon" href="../../static/images/favicon.png"></link>
+      <link rel="icon" type="image/x-icon" href={cms.header.head.favIcon}></link>
     </Head>
   );
 };

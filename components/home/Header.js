@@ -1,5 +1,6 @@
 import Navbar from "../layout/Navbar";
 import { useState, useEffect } from "react";
+import { cms } from "../../cms";
 
 const Header = () => {
   const [loaded, setLoaded] = useState(false);
@@ -12,24 +13,22 @@ const Header = () => {
     <section 
       id="header" 
       className="overlay-bg"
-      style={{backgroundImage: `url('static/images/home-bg.gif')`}}
+      style={{backgroundImage: cms.header.backGroundImage}}
     >
       <Navbar />
       <div className="content">
         <div className="container">
           <h1 className={`title ${loaded && "loaded"}`}>
-            <span className="text-second">n</span>
-            <span className="text-second">i</span>
-            <span>t</span>
-            <span>e</span>
-            <span>c</span>
-            <span>h</span>
+            {cms.header.title.map((el) => 
+              el.hasColor 
+              ? <span className="text-second" key={el.id}>{el.letter}</span>
+              : <span key={el.id}>{el.letter}</span>
+            )}
           </h1>
           <p className="slogan">
-            Somos especialistas em desenvolvimento de software com experiência no mercado.
-            Criamos inovação para empresas na construção de seus serviços e produtos digitais.
+            {cms.header.slogan}
           </p>
-          <a href="https://wa.me/5511910647113"> <button className="btn second bold">Vamos trabalhar juntos!</button></a>
+          <a href={cms.header.button.link}> <button className="btn second bold">{cms.header.button.title}</button></a>
         </div>
       </div>
       <style jsx>{`

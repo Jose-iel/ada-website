@@ -1,25 +1,24 @@
 import React from 'react';
 import Statistic from './Statistic';
+import { cms } from "../../cms";
 
 const Statistics = () => {
   return (
     <div id='statistics' className='dark-bg'>
       <div className='stas overlay-bg'>
-        <Statistic
-          icon='static/images/customer.svg'
-          name='clientes'
-          number={200}
-        />
-        <Statistic
-          icon='static/images/projects.svg'
-          name='projetos'
-          number={180}
-        />
+        {cms.statistics.infos.map((el) => 
+          <Statistic
+            icon={el.icon}
+            name={el.name}
+            number={el.number}
+            key={el.id}
+          />
+        )}
       </div>
 
       <div className='contact second-bg'>
-        <h2>Você será o próximo!</h2>
-        <button className='btn first'>fale conosco</button>
+        <h2>{cms.statistics.title}</h2>
+        <a href={cms?.statistics.linkWhatsapp}><button className='btn first'>fale conosco</button></a>
       </div>
       <style jsx>
         {`

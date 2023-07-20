@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { cms } from "../../cms";
 
 class About extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class About extends React.Component {
   componentDidMount() {
     window.addEventListener("scroll", () => {
       if (
-        window.pageYOffset >= this.aboutSection.current.offsetTop - 100 &&
+        window.pageYOffset >= this.aboutSection?.current?.offsetTop - 100 &&
         !this.state.scrolled
       ) {
         this.setState({
@@ -34,33 +35,14 @@ class About extends React.Component {
               </div>
             </div>
             <div className="text">
-              <h2 className="main-title">Nós somos a NITECH</h2>
-              <p>
-                <strong className="sub-title-about">Sobre a Nitech</strong>
-              </p>
-              <p>
-                Temos As melhores práticas 
-                de programação para construir o seu 
-                produto ou serviço. Conte conosco para desenhar soluções digitais 
-                inovadoras e planejar seu sistema.
-              </p>
-              <p>
-                <strong className="sub-title-about">O que fazemos?</strong>
-              </p>
-              <p>
-                Desenvolvemos soluções digitais. Simplificamos a tecnologia para que 
-                você possa ter sua inovação. Conheça nossos serviços e descubra como 
-                podemos lhe ajudar.
-              </p>
-              <p>
-                <strong className="sub-title-about">Como fazemos?</strong>
-              </p>
-              <p>
-                Com agilidade e tecnologia para transformar a sua ideia em software. 
-                Nosso time multidisciplinar está pronto para conceber e desenvolver o 
-                seu produto ou serviço digital.
-              </p>
-              <a href="https://wa.me/5511910647113"> <button className="btn first">Fale conosco</button></a>
+              <h2 className="main-title">{cms?.about.title}</h2>
+              {cms.about.infos.map((el) => 
+                <div key={el.id}>
+                  <p><strong className="sub-title-about">{el.title}</strong></p>
+                  <p>{el.text}</p>
+                </div>
+              )}
+              <a href={cms?.about.linkWhatsapp}> <button className="btn first">Fale conosco</button></a>
             </div>
           </div>
         </div>

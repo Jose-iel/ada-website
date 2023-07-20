@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Head from "next/head";
+import { cms } from "../../cms";
 
 class Navbar extends React.Component {
   state = {
@@ -83,7 +84,7 @@ class Navbar extends React.Component {
               <div className="logo">
                 <Link to="header" smooth={true} duration={500}>
                   <img 
-                    src="../../static/images/logoNitech_vetor.png" 
+                    src={cms.navBar.logo}
                     alt="logo"
                     width={150}
                   />
@@ -97,114 +98,20 @@ class Navbar extends React.Component {
                     : "links"
                 }
               >
-                <li>
-                  <Link
-                    activeClass="active"
-                    to="header"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    sobre nós
-                  </Link>
-                </li>
-                {/* <li>
-                  <Link
-                    activeClass="active"
-                    to="works"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    nossos projetos
-                  </Link>
-                </li> */}
-                <li>
-                  <Link
-                    activeClass="active"
-                    to="services"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    nossos serviços
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    to="products"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    produtos
-                  </Link>
-                </li>
-                {/* <li>
-                  <Link
-                    activeClass="active"
-                    to="packages"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    packages
-                  </Link>
-                </li> */}
-                <li>
-                  <Link
-                    activeClass="active"
-                    to="testimonials"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    Nosso time
-                  </Link>
-                </li>
-                {/* <li>
-                  <Link
-                    activeClass="active"
-                    to="blog"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    blog
-                  </Link>
-                </li> */}
-                <li>
-                  <Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth="easeInOutQuad"
-                    duration={2500}
-                    onClick={this.toggleMenu}
-                  >
-                    contato
-                  </Link>
-                </li>
+                {cms.navBar.links.map((el) => 
+                  <li key={el.id}>
+                    <Link
+                      activeClass="active"
+                      to={el.path}
+                      spy={true}
+                      smooth="easeInOutQuad"
+                      duration={2500}
+                      onClick={this.toggleMenu}
+                    >
+                      {el.title}
+                    </Link>
+                  </li>
+                )}
               </ul>
               <div id="bars" onClick={this.toggleMenu}>
                 <span className="bar"></span>

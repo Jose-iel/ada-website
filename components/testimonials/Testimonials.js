@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import Head from "next/head";
 import Comment from "./Comment";
+import { cms } from "../../cms";
 
 const Testimonials = () => {
   const settings = {
@@ -34,77 +35,19 @@ const Testimonials = () => {
         <link rel="stylesheet" href="/static/css/slick-theme.min.css" />
       </Head>
       <div className="container">
-        <h2 className="main-title">Nosso time</h2>
+        <h2 className="main-title">{cms.team.title}</h2>
         <p className="main-slogan">
-          Onde está composta nossa equipe!
+          {cms.team.subTitle}
         </p>
-
         <Slider {...settings}>
-          <Comment 
-            name="Nize Costa"
-            text="Não espere por oportunidades, crie-as você mesmo."
-            image="/static/images/equipe/nize.png"
-          />
-          <Comment 
-            name="Whandell Maior"
-            text="A vida é uma jornada, aproveite a viagem."
-            image="/static/images/equipe/whandell.png"
-          />
-          <Comment 
-            name="José Castro"
-            text="Não tenha medo do fracasso. Tenha medo de não tentar."
-            image="/static/images/equipe/jose.jpg"
-          />
-          <Comment 
-            name="Alisson Siqueira"
-            text="O sucesso é a soma dos pequenos esforços repetidos dia após dia."
-            image="/static/images/equipe/alisson.jpg"
-          />
-          <Comment 
-            name="Aislan Galdino"
-            text="Um pequeno passo a cada dia pode te levar a grandes conquistas."
-            image="/static/images/equipe/aislan.jpg"
-          />
+          {cms.team.infos.map((el) => 
             <Comment 
-            name="Alan Carvalho"
-            text="A vida é curta, faça cada dia valer a pena."
-            image="/static/images/equipe/alan.jpg"
-          />
-          <Comment 
-            name="Neto Almeida"
-            text="Insista, persista e nunca desista."
-            image="/static/images/equipe/neto.jpg"
-          />
-          <Comment 
-            name="Arlete Medeiros"
-            text="Acreditar em si mesmo é o primeiro passo para alcançar seus objetivos."
-            image="/static/images/equipe/arlete.png"
-          />
-           <Comment 
-            name="Fabiana Macedo"
-            text="Nunca é tarde demais para ser o que você poderia ter sido."
-            image="/static/images/equipe/fabi.jpg"
-          />
-           <Comment 
-            name="Isis de Oliveira"
-            text="A vida é como uma câmera, foque no positivo, capture momentos bons e desenvolva-os."
-            image="/static/images/equipe/Isis.png"
-          />
-           <Comment 
-            name="Rivaldo Guimarães"
-            text="Não basta ter talento, é preciso ter persistência para alcançar o sucesso."
-            image="/static/images/equipe/rivaldo.png"
-          />
-          <Comment 
-            name="Willams Elias"
-            text="Sucesso é a realização progressiva a um ideal de valor."
-            image="/static/images/equipe/Williams.jpeg"
-          />
-           <Comment 
-            name="Roberta Abreu"
-            text="Acredite em si mesmo e faça acontecer."
-            image="/static/images/equipe/roberta.png"
-          />
+              name={el.name}
+              text={el.text}
+              image={el.image}
+              key={el.id}
+            />
+          )}
         </Slider>
       </div>
       <style jsx>

@@ -1,7 +1,7 @@
 import Header from '../components/home/Header';
 import Layout from '../components/layout/Layout';
 import About from '../components/about/About';
-// import Statistics from '../components/about/Statistics';
+import Statistics from '../components/about/Statistics';
 // import Works from '../components/works/Works';
 import Testimonials from '../components/testimonials/Testimonials';
 import Services from '../components/services/Services';
@@ -15,12 +15,12 @@ const Home = () => {
     <Layout>
       <Header />
       <About />
+      <Statistics />
       <Services />
       <Products />
       <Testimonials />
       {/* <Blog /> */}
       <Contact />
-      {/* <Statistics /> */}
       {/* <Works /> */}
       {/* <Packages /> */}
     </Layout>

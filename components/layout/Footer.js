@@ -1,11 +1,13 @@
 import Socials from './Socials';
+import { cms } from "../../cms";
+
 const Footer = () => {
   return (
     <footer className='dark-bg'>
       <div className='container'>
         <Socials />
       </div>
-      <p className='copy'>todos os direitos reservados &copy; CNPJ: 41.945.587/0001-99  nitech 2023 </p>
+      <p className='copy'>{cms.footer.copy}</p>
       <style jsx>
         {`
           footer .copy {
