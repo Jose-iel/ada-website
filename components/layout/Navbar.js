@@ -62,6 +62,7 @@ class Navbar extends React.Component {
     }
   };
 
+  
   render() {
     return (
       <div className="nav-wrapper">
@@ -84,7 +85,7 @@ class Navbar extends React.Component {
               <div className="logo">
                 <Link to="header" smooth={true} duration={500}>
                   <img 
-                    src={cms.navBar.logo}
+                    src={this.state.scrolledNav ? cms.navBar.logo : cms.navBar.logoBranca}
                     alt="logo"
                     width={150}
                   />
@@ -153,7 +154,7 @@ class Navbar extends React.Component {
             }
             
             #nav .content .logo h2 {
-              color: #ffe63c;
+              color: #67bca4;
               text-transform: uppercase;
               font-family: Exo_Black;
               font-size: 30px;

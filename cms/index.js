@@ -25,12 +25,13 @@ export const cms = {
     },
     head: {
       meta: "Digite o meta",
-      title: "ADA",
-      favIcon: "../../static/images/favicon.png"
+      title: "ADA | Solução em dados",
+      favIcon: "../../static/images/Isotipo_ADA.png"
     }
   },
   navBar: {
-    logo: "../../static/images/logoNitech_vetor.png",
+    logo: "../../static/images/Logo_ADA.png",
+    logoBranca: "../../static/images/Logo_ADA_Branco.png",
     links: [
       {
         id: 1,

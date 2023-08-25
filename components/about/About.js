@@ -62,7 +62,7 @@ class About extends React.Component {
             }
             #about .row .text .main-title {
               text-align: left;
-              color: #7503A6;
+              color: #54b394;
               margin-bottom: 40px;
             }
             #about .row .text p {

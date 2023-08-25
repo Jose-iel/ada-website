@@ -106,8 +106,8 @@ ul {
 
 /* line 125, global.scss */
 .btn.second {
-  background-color: #F28705;
-  border: 2px solid #F28705;
+  background-color: #9bcc8c;
+  border: 2px solid #9bcc8c;
   color: #FFFFFF;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -122,9 +122,9 @@ ul {
 
 /* line 137, global.scss */
 .btn.first {
-  background-color: #0554F2;
+  background-color: #1c8cac;
   color: #fff;
-  border: 2px solid #0554F2;
+  border: 2px solid #1c8cac;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -133,18 +133,18 @@ ul {
   /* line 143, global.scss */
   .btn.first:hover {
     background-color: transparent;
-    color: #0554F2; }
+    color: #1c8cac; }
 
 /* line 149, global.scss */
 .main-title {
   font-size: 40px;
-  color: #7503A6;
+  color: #54b394;
   text-transform: uppercase;
   text-align: center; }
 
 /* line 155, global.scss */
 .main-slogan {
-  color: #0554F2;
+  color: #1c8cac;
   margin-bottom: 80px;
   text-align: center;
   text-transform: uppercase;
@@ -156,11 +156,11 @@ ul {
 
 /* line 166, global.scss */
 .second-bg {
-  background-color: #f28705ea; }
+  background-color: #9bcc8cea; }
 
 /* line 170, global.scss */
 .text-second {
-  color: #F28705; }
+  color: #9bcc8c; }
 
 .text-third {
   color: #9370DB; }
@@ -263,7 +263,7 @@ form .input-wrap textarea:focus {
     top: 0;
     bottom: 0;
     border-radius: 50px;
-    background-color: #0554f2bd;
+    background-color: #1c8cacbd;
     width: 50%;
     z-index: -1;
     transition: all .1s ease-in-out; }
@@ -309,5 +309,5 @@ form .input-wrap textarea:focus {
 }
 
 .sub-title-about {
-  color: #0554F2;
+  color: #1c8cac;
 }
